@@ -1,5 +1,7 @@
 # RevStackCore.Pattern.Graph
 
+[![Build status](https://ci.appveyor.com/api/projects/status/xchx2i6760cl734h?svg=true)](https://ci.appveyor.com/project/tachyon1337/pattern-graph)
+
 Extends the generic RevStackCore repository pattern for entities to graph nodes/vertices.
 
 # Nuget Installation
