@@ -1,0 +1,19 @@
+{
+  "name": "RevStackCore.Pattern.Graph",
+  "version": "0.9.0",
+  "description": "C# Design Pattern Graph Extension",
+  "main": "RevStackCore.Pattern.Graph.sln",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RevStackCore/Pattern.Graph.git"
+  },
+  "author": "S. Francis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RevStackCore/Pattern.Graph/issues"
+  },
+  "homepage": "https://github.com/RevStackCore/Pattern.Graph"
+}
