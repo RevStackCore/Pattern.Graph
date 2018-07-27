@@ -60,9 +60,19 @@ namespace RevStackCore.Pattern.Graph
             return _repository.CreateIndex();
         }
 
+        public bool CreateIndex(string property)
+        {
+            return _repository.CreateIndex(property);
+        }
+
         public Task<bool> CreateIndexAsync()
         {
             return Task.FromResult(CreateIndex());
+        }
+
+        public Task<bool> CreateIndexAsync(string property)
+        {
+            return Task.FromResult(CreateIndex(property));
         }
 
         public void Delete(TEntity entity)

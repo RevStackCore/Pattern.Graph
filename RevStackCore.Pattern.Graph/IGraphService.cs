@@ -25,6 +25,7 @@ namespace RevStackCore.Pattern.Graph
         bool DeleteRelationShip<TOut>(TKey inboundId, TKey outboundId, string relationship) where TOut : class, IEntity<TKey>;
         bool CreateConstraint();
         bool CreateIndex();
+        bool CreateIndex(string property);
         IQueryable<TEntity> Find(string label, Expression<Func<TEntity, bool>> predicate);
         IQueryable<TEntity> Find(string label, string expression);
         IQueryable<TEntity> Find(string expression);
@@ -48,6 +49,7 @@ namespace RevStackCore.Pattern.Graph
         Task<bool> DeleteRelationShipAsync<TOut>(TKey inboundId, TKey outboundId, string relationship) where TOut : class, IEntity<TKey>;
         Task<bool> CreateConstraintAsync();
         Task<bool> CreateIndexAsync();
+        Task<bool> CreateIndexAsync(string property);
         Task<IQueryable<TEntity>> FindAsync(string label, Expression<Func<TEntity, bool>> predicate);
         Task<IQueryable<TEntity>> FindAsync(string label, string expression);
         Task<IQueryable<TEntity>> FindAsync(string expression);

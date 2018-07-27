@@ -24,6 +24,7 @@ namespace RevStackCore.Pattern.Graph
         bool HasRelationship<TOut>(TKey inboundId, TKey outboundId, string relationship) where TOut : class, IEntity<TKey>;
         bool CreateConstraint();
         bool CreateIndex();
+        bool CreateIndex(string property);
         IQueryable<TEntity> Find(string label, Expression<Func<TEntity, bool>> predicate);
         IQueryable<TEntity> Find(string label, Expression<Func<TEntity, bool>> predicate, int limit, int skip);
         IQueryable<TEntity> Find(string label,string expression);
